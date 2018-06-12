@@ -32,7 +32,7 @@ module.exports = function (controller) {
 function showUserPreference(controller, bot, message, userId, color) {
     bot.startConversation(message, function (err, convo) {
 
-        bot.say(`Hey, I know you <@personId:${userId}>!<br/> '${color}' is your favorite color.`);
+        convo.say("Ich habe Daten. <@personId:${userId}>!<br/> '${color}' is your favorite color.");
 
         convo.ask("Should I erase your preference?  (yes/no)", [
             {
