@@ -18,7 +18,7 @@ module.exports = function (controller) {
             // User preference found
             if (data) {
                 // Show user preference
-                convo.say("Ich habe Daten.");
+                convo.say("Ich habe Daten3.");
                 showUserPreference(controller, bot, message, userId, data.value);
                 return;
             }
